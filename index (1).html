@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DayHack — Everyday Life</title>
+  <meta name="description" content="Hackathon theme: Everyday Life — build tiny improvements for daily living." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">DH</div>
+      <div>
+        <h1>DayHack — Everyday Life</h1>
+        <div class="tag">Build small things that make daily life better</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#submit">Submit</a>
+      <a href="#rules">Rules</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="card">
+        <h2 id="overview">Theme: Everyday Life</h2>
+        <p>Make something that eases a daily task — tidy up routines, solve small annoyances, help students or families, or add a little joy to ordinary days. Small impact, real usefulness.</p>
+
+        <div class="features">
+          <div class="feature">
+            <h4>Who should join</h4>
+            <p class="tag">Everyone — beginners welcome. Teams of 1–4 people.</p>
+          </div>
+          <div class="feature">
+            <h4>Ideas to try</h4>
+            <p class="tag">Habit trackers, automations, organizing tools, micro-utilities, accessibility helpers.</p>
+          </div>
+          <div class="feature">
+            <h4>Judging</h4>
+            <p class="tag">Impact (40%), Creativity (30%), Execution (20%), Demo polish (10%).</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <h3>Timeline</h3>
+        <ul class="tag">
+          <li>Idea submission: Day 1</li>
+          <li>Build: Day 1–2</li>
+          <li>Demos & judging: Day 3</li>
+        </ul>
+
+      </div>
+
+      <div class="card">
+        <h3 id="submit">Quick Submit</h3>
+        <form id="submitForm">
+          <label for="team">Team / Project Name</label>
+          <input id="team" type="text" placeholder="e.g., TidyBuddy" required />
+
+          <label for="lead">Lead Email</label>
+          <input id="lead" type="email" placeholder="you@example.com" required />
+
+          <label for="desc">Short description</label>
+          <textarea id="desc" placeholder="One-sentence pitch (max 200 chars)" maxlength="200" required></textarea>
+
+          <label for="category">Category</label>
+          <select id="category">
+            <option>Organization</option>
+            <option>Study / Education</option>
+            <option>Family / Home</option>
+            <option>Accessibility</option>
+            <option>Other</option>
+          </select>
+
+          <div class="row">
+            <button class="btn btn-primary" type="submit">Send submission</button>
+            <button class="btn btn-ghost" type="button" id="clearBtn">Clear</button>
+          </div>
+
+          <div id="formMsg" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="card" id="rules">
+      <h3>Rules & Tips</h3>
+      <ol class="tag">
+        <li>Keep scope small — polish beats unfinished complexity.</li>
+        <li>Show a working demo or prototype.</li>
+        <li>Explain the everyday problem clearly.</li>
+        <li>Respect intellectual property and open-source licenses.</li>
+      </ol>
+    </section>
+
+    <section class="side-section">
+      <div class="card">
+        <h3>Judging Criteria</h3>
+        <ul class="tag">
+          <li><strong>Impact (40%)</strong> — How meaningful is the improvement?</li>
+          <li><strong>Creativity (30%)</strong> — Unique or clever solutions.</li>
+          <li><strong>Execution (20%)</strong> — Working prototype & usability.</li>
+          <li><strong>Demo (10%)</strong> — Clarity and presentation.</li>
+        </ul>
+      </div>
+
+      <aside class="card" id="contact">
+        <h4>Resources</h4>
+        <p class="tag">Starter code and guides available in announcements.</p>
+        <h4>Contact</h4>
+        <p class="tag">RegionHacks Team<br/>regionhacks@example.com</p>
+        <button class="btn btn-ghost" onclick="viewSubmissions()">View local submissions</button>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© DayHack • Build small — ship quick.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
